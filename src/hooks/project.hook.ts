@@ -61,14 +61,14 @@ export const useDeleteProject = () => {
       } else {
         console.error(res);
         toast.error(
-          res.message || "Failed to delete Project. Please try again."
+          res.message || "Failed to delete project. Please try again."
         );
       }
     },
     onError: (error) => {
       console.error(error);
       toast.error(
-        error.message || "Failed to delete Project. Please try again."
+        error.message || "Failed to delete project. Please try again."
       );
     },
   });

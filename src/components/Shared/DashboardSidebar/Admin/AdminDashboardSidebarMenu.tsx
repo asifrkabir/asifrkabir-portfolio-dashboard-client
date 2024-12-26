@@ -9,6 +9,7 @@ import {
   LayoutDashboard,
   ListTodo,
   type LucideIcon,
+  Newspaper,
   Presentation,
   Users,
 } from "lucide-react";
@@ -53,6 +54,11 @@ const items: IMenuItem[] = [
     title: "Projects",
     url: "/admin-dashboard/projects",
     icon: Presentation,
+  },
+  {
+    title: "Blogs",
+    url: "/admin-dashboard/blogs",
+    icon: Newspaper,
   },
 ];
 
