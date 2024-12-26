@@ -8,6 +8,7 @@ import {
 import { IExperience } from "@/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { MoreVertical } from "lucide-react";
+import DeleteExperienceDropdownItem from "../DeleteExperience/DeleteExperienceDropdownItem";
 import { UpdateExperienceModal } from "../UpdateExperience/UpdateExperienceModal";
 
 export const columns: ColumnDef<IExperience>[] = [
@@ -56,7 +57,7 @@ export const columns: ColumnDef<IExperience>[] = [
           <DropdownMenuContent>
             <UpdateExperienceModal id={experience._id} />
             <DropdownMenuSeparator />
-            {/* <DeleteProductCategoryDropdownItem id={productCategory._id} /> */}
+            <DeleteExperienceDropdownItem id={experience._id} />
           </DropdownMenuContent>
         </DropdownMenu>
       );
