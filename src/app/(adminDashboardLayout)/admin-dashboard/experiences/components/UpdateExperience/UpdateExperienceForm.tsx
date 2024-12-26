@@ -1,8 +1,9 @@
 "use client";
 
+import AppDatePicker from "@/components/form/AppDatePicker";
 import AppForm from "@/components/form/AppForm";
 import AppInput from "@/components/form/AppInput";
-import AppDatePicker from "@/components/form/AppDatePicker";
+import AppRichTextEditor from "@/components/form/AppRichTextEditor";
 import { Button } from "@/components/ui/button";
 import {
   useGetExperienceById,
@@ -122,10 +123,9 @@ const UpdateExperienceForm = ({ id, closeModal }: IProps) => {
 
         <AppDatePicker name="endDate" label="End Date" />
 
-        <AppInput
+        <AppRichTextEditor
           name="description"
           label="Description"
-          type="text"
           placeholder="Enter a brief description"
         />
 

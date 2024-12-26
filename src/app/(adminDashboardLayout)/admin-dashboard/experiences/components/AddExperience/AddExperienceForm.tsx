@@ -1,7 +1,7 @@
 import AppDatePicker from "@/components/form/AppDatePicker";
 import AppForm from "@/components/form/AppForm";
 import AppInput from "@/components/form/AppInput";
-import AppTextarea from "@/components/form/AppTextarea";
+import AppRichTextEditor from "@/components/form/AppRichTextEditor";
 import { Button } from "@/components/ui/button";
 import { useCreateExperience } from "@/hooks/experience.hook";
 import { createExperienceValidationSchema } from "@/schemas/experience.schema";
@@ -85,10 +85,9 @@ const AddExperienceForm = ({ closeModal }: IProps) => {
 
         <AppDatePicker name="endDate" label="End Date" />
 
-        <AppTextarea
+        <AppRichTextEditor
           name="description"
           label="Description"
-          type="text"
           placeholder="Enter a brief description"
         />
 
