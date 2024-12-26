@@ -59,7 +59,7 @@ const AppDatePicker = ({
           <Button
             variant={"outline"}
             disabled={disabled}
-            className={`w-[240px] justify-start text-left font-normal ${
+            className={`w-full justify-start text-left font-normal ${
               errors[name] ? "border-red-500" : ""
             }`}
           >

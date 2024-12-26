@@ -13,4 +13,9 @@ export const createExperienceValidationSchema = z.object({
 
 export const updateExperienceValidationSchema = z.object({
   title: requiredString,
+  company: requiredString,
+  startDate: z.string().min(1, "Start date is required."),
+  endDate: z.string().optional(),
+  description: z.string().optional(),
+  technologies: z.string().optional(),
 });
