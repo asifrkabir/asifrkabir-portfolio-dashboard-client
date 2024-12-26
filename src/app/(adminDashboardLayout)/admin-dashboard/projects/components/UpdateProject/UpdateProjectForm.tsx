@@ -95,9 +95,11 @@ export function UpdateProjectForm({ closeModal, id }: IProps) {
       repositoryUrls: data.repositoryUrls
         ? data.repositoryUrls.split(",").map((tech: string) => tech.trim())
         : undefined,
-      liveDemoUrl: data.liveDemoUrl,
+      liveDemoUrl: data?.liveDemoUrl || undefined,
       images: existingImageUrls,
     };
+
+    console.log({projectData});
 
     formData.append("data", JSON.stringify(projectData));
 
