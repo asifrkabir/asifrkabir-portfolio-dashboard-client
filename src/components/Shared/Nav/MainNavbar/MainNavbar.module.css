@@ -1,0 +1,26 @@
+.animatedGradientText {
+  font-weight: bold;
+  font-size: 1.25rem;
+  background: linear-gradient(
+    90deg,
+    #e84040 /* Darker red */,
+    #d59849 /* Darker orange */,
+    #66c097 /* Darker green */,
+    #3f8cc8 /* Darker blue */,
+    #e84040 /* Repeat darker red */
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-slide 3s linear infinite;
+}
+
+@keyframes gradient-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
