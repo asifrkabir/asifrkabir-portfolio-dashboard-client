@@ -1,4 +1,3 @@
-import { CartModal } from "@/components/cart/CartModal";
 import { DarkModeToggle } from "../../DarkModeToggle/DarkModeToggle";
 import NavbarUser from "../../NavbarUser/NavbarUser";
 import MainMobileNavbar from "../MainMobileNavbar/MainMobileNavbar";
@@ -16,7 +15,6 @@ export default function MainHeader() {
 
         {/* Desktop & mobile */}
         <div className="flex items-center justify-end flex-1 gap-2">
-          <CartModal />
           <DarkModeToggle />
           <NavbarUser />
         </div>
