@@ -6,7 +6,6 @@ import {
   SidebarMenu,
 } from "@/components/ui/sidebar";
 import {
-  House,
   LayoutDashboard,
   ListTodo,
   type LucideIcon,
@@ -29,11 +28,6 @@ interface IMenuItem {
 }
 
 const items: IMenuItem[] = [
-  {
-    title: "Home",
-    url: "/",
-    icon: House,
-  },
   {
     title: "Dashboard",
     url: "/admin-dashboard",
