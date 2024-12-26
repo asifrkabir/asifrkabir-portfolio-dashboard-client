@@ -10,3 +10,4 @@ export * from "./review.type";
 export * from "./shop.type";
 export * from "./ui.type";
 export * from "./user.type";
+export * from "./experience.type";
