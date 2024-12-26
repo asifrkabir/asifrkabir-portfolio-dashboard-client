@@ -1,7 +1,7 @@
 import { AddSkillModal } from "./_components/AddSkill/AddSkillModal";
 import Skills from "./_components/Skills";
 
-const ExperiencesPage = () => {
+const SkillsPage = () => {
   return (
     <div className="h-full flex-1 flex-col space-y-2 p-8 md:flex">
       <div className="flex items-center justify-between">
@@ -13,4 +13,4 @@ const ExperiencesPage = () => {
   );
 };
 
-export default ExperiencesPage;
+export default SkillsPage;

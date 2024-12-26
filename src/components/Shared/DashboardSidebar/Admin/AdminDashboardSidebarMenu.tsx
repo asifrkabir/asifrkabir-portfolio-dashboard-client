@@ -9,6 +9,7 @@ import {
   LayoutDashboard,
   ListTodo,
   type LucideIcon,
+  Presentation,
   Users,
 } from "lucide-react";
 import DashboardSidebarMenuItemDropdown from "../DashboardSidebarMenuItemDropdown";
@@ -47,6 +48,11 @@ const items: IMenuItem[] = [
     title: "Skills",
     url: "/admin-dashboard/skills",
     icon: ListTodo,
+  },
+  {
+    title: "Projects",
+    url: "/admin-dashboard/projects",
+    icon: Presentation,
   },
 ];
 
